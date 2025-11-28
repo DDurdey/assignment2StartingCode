@@ -60,5 +60,41 @@ public class MyStack<E> implements StackADT<E> {
         return list.contains(toFind);
     }
 
-    
+    @Override
+    public int search(E toFind) {
+        if (toFind == null) {
+            throw new NullPointerException("Cannot search for null elements");
+        }
+        
+        for (int i = list.size() - 1; i >= 0; i--) {
+            if (toFind.equals(list.get(i))) {
+                return list.size() - i;
+            }
+        }
+        return -1;
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+        return list.iterator();
+    }
+
+    @Override
+    public int search(E toFind) {
+        if (toFind == null) {
+            throw new NullPointerException("Cannot search for null elements");
+        }
+        
+        for (int i = list.size() - 1; i >= 0; i--) {
+            if (toFind.equals(list.get(i))) {
+                return list.size() - i;
+            }
+        }
+        return -1;
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+        return list.iterator();
+    }
 }
