@@ -35,5 +35,30 @@ public class MyStack<E> implements StackADT<E> {
         return list.get(list.size() - 1);
     }
 
+    @Override
+    public void clear() {
+        list.clear();
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return list.isEmpty();
+    }
+
+    @Override
+    public Object[] toArray() {
+        return list.toArray();
+    }
+
+    @Override
+    public E[] toArray(E[] holder) throws NullPointerException {
+        return list.toArray(holder);
+    }
+
+    @Override
+    public boolean contains(E toFind) throws NullPointerException {
+        return list.contains(toFind);
+    }
+
     
 }
