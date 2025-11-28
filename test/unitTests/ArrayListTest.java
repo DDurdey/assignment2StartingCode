@@ -12,9 +12,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import implementations.MyArrayList;
 import implementations.MyDLL; //This might need to be changed to utilities? Lyub cannot test for this, but everything but these pass the test
 import utilities.Iterator;
-import utilities.MyArrayList; //Had to change it from implementations to utilities for it to work
 
 /**
  * @author kitty, maryam

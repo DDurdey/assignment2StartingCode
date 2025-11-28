@@ -1,6 +1,9 @@
-package utilities;
+package implementations;
 
 import java.util.NoSuchElementException;
+
+import utilities.Iterator;
+import utilities.ListADT;
 
 /**
  * MyArrayList is a dynamic array-based implementation of the ListADT interface.
